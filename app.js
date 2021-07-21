@@ -293,6 +293,7 @@ const cleaningGoogle = () => {
         continue;
       }
       arr.push(temp[0]);
+      i++;
     }
     presentFile = arr;
     for (let i = 0; i < presentFile.length; i++) {
