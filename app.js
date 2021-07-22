@@ -295,11 +295,7 @@ const cleaningGoogle = () => {
         continue;
       }
       arr.push(temp[0]);
-      } else {
-        wrongPatter.push(presentFile[i]);
-        continue;
       }
-      
     }
     presentFile = arr;
     for (let i = 0; i < presentFile.length; i++) {
