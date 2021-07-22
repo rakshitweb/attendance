@@ -135,7 +135,7 @@ const wrongPatterClean = () => {
     if (isNaN(t)) {
       temp.push(wrongPatter[i]);
     }
-    console.log(t);
+//     console.log(t);
   }
   wrongPatter = temp;
 };
@@ -323,7 +323,7 @@ const cleaningGoogle = () => {
     } else {
       presentFile = presentFile.split("\n");
     }
-    console.log(presentFile);
+//     console.log(presentFile);
     let arr = new Array();
     let temp;
     for (let i = 0; i < presentFile.length; i++) {
@@ -334,7 +334,7 @@ const cleaningGoogle = () => {
           temp = presentFile[i].split(" ");
         } else {
           wrongPatter.push(presentFile[i]);
-          console.log("wrong: ", presentFile[i]);
+//           console.log("wrong: ", presentFile[i]);
           continue;
         }
         if (isNaN(parseInt(temp[0]))) {
@@ -343,9 +343,9 @@ const cleaningGoogle = () => {
           arr.push(temp[0]);
         }
       }
-      console.log(presentFile[i]);
+//       console.log(presentFile[i]);
     }
-    console.log(arr);
+//     console.log(arr);
     presentFile = arr;
     for (let i = 0; i < presentFile.length; i++) {
       let t = rollCode + presentFile[i];
