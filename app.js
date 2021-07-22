@@ -284,16 +284,22 @@ const cleaningGoogle = () => {
     let arr = new Array();
     let temp;
     for (let i = 0; i < presentFile.length; i++) {
+      if(presentFile[i].indexOf(":") != -1){
       if (presentFile[i].indexOf("_") == 3) {
         temp = presentFile[i].split("_");
       } else if (presentFile[i].indexOf(" ") == 3) {
         temp = presentFile[i].split(" ");
-      } else {
+      }
+        else {
         wrongPatter.push(presentFile[i]);
         continue;
       }
       arr.push(temp[0]);
-      i++;
+      } else {
+        wrongPatter.push(presentFile[i]);
+        continue;
+      }
+      
     }
     presentFile = arr;
     for (let i = 0; i < presentFile.length; i++) {
