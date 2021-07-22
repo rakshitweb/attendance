@@ -337,22 +337,23 @@ const detect = (tag, type) => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (checkdata()) {
-    if (classType[0].checked) {
-      console.log("zoom");
-      cleaning();
-    } else if (classType[1].checked) {
-      console.log("google");
-      rollCode = document.querySelector(".rollcode").value;
-      cleaningGoogle();
-    } else {
-      console.log("Others IN PROGRESS");
-    }
-    document.getElementById("results").scrollIntoView({ block: "center" });
-    btnDetail.forEach((btn) => {
-      btn.disabled = false;
-    });
-  } else {
-    alert("Please file the data entries please.");
-  }
+  alert('Temporarily Closed. Under Process.');
+//   if (checkdata()) {
+//     if (classType[0].checked) {
+//       console.log("zoom");
+//       cleaning();
+//     } else if (classType[1].checked) {
+//       console.log("google");
+//       rollCode = document.querySelector(".rollcode").value;
+//       cleaningGoogle();
+//     } else {
+//       console.log("Others IN PROGRESS");
+//     }
+//     document.getElementById("results").scrollIntoView({ block: "center" });
+//     btnDetail.forEach((btn) => {
+//       btn.disabled = false;
+//     });
+//   } else {
+//     alert("Please file the data entries please.");
+//   }
 });
