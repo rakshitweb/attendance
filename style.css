@@ -1,0 +1,157 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main {
+  margin: 2% 10%;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+#note {
+  margin: 40px auto;
+  padding: 10px;
+  border: 1px solid rgb(139, 2, 2);
+  border-radius: 5px;
+  background-color: rgba(252, 46, 46, 0.048);
+  text-align: center;
+}
+#defaultText,
+#presentText {
+  height: 100%;
+  width: 100%;
+}
+#note h4,
+.wrong {
+  color: red;
+}
+.correct {
+  color: green;
+  font-weight: 500;
+}
+.correct i {
+  font-weight: 300;
+}
+.form-check {
+  margin: 10px 0px;
+}
+label i {
+  color: rgb(163, 163, 163);
+}
+footer {
+  background-color: rgb(189, 188, 188);
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s all ease-in-out;
+  animation: colorCoding 6s ease-in-out infinite;
+}
+@keyframes colorCoding {
+  0% {
+    color: white;
+  }
+  20% {
+    color: rgb(184, 184, 184);
+  }
+  40% {
+    color: rgb(116, 116, 116);
+  }
+  60% {
+    color: black;
+  }
+  75% {
+    color: rgb(58, 58, 58);
+  }
+  100% {
+    color: white;
+  }
+}
+footer a:hover {
+  color: black;
+}
+#results main {
+  margin: 0px;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#results .basic {
+  margin-top: 20px;
+}
+.result {
+  flex: 1;
+  border-radius: 5px;
+  height: min-content;
+  min-height: 130px;
+  padding: 10px;
+  border: 1px solid rgba(146, 146, 146, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.result:nth-child(2n) {
+  margin: 0px 5px;
+}
+.title {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.t-red {
+  color: red;
+}
+.t-green {
+  color: green;
+}
+.t-orange {
+  color: orange;
+}
+.t-blue {
+  color: blue;
+}
+.bt {
+  padding: 10px 10px 0px;
+  font-weight: 300;
+  font-size: 13px;
+  border: none;
+  background-color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+.bt:disabled {
+  pointer-events: none;
+}
+.bt:hover {
+  font-size: 15px;
+  font: 400;
+  border-bottom: 2px solid;
+}
+.presentStudents .bt:hover {
+  border-color: green;
+}
+.absentStudents .bt:hover {
+  border-color: red;
+}
+.duplicateStudents .bt:hover {
+  border-color: orange;
+}
+.wrongPatternStudents .bt:hover {
+  border-color: blue;
+}
+.rollcode {
+  width: 100px;
+  text-align: center;
+  margin: 0px 20px;
+}
+#note ul {
+  list-style-type: none;
+}
